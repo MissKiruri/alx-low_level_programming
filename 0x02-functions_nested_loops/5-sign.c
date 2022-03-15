@@ -1,8 +1,8 @@
-#include "holberton.h"
+#include "main.h"
 /**
-* print_sign - checks the polarity
-* @n : integer to be checked
-* Return: 0, 1, -1
+* print_sign - a function that prints the sign of a number and it checks the polarity
+* @n :number input/ integer to be checked
+* Return: 1 prints '+' if n > 0, 0 prints '0' if n = 0, -1 prints '-' if n < 0
 *
 */
 int print_sign(int n)

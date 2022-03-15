@@ -1,25 +1,19 @@
-#include "holberton.h"
+#include "main.h"
 /**
+*print_last_digit - a function that prints the last digit of a number
 * _abs- returns 1 if n is lowercase, 0 otherwise
-* @n: integer to be checked
-* Return: abs(n)
+* @x: number's last digit result
+* Return: value of the last digit
+*
 */
-int _abs(int n)
+int print_last_digit(int x)
 {
-if (n >= 0)
-return (n);
-else
-return (-1 * n);
+int pld;
+pld = (x % 10);
+if (pld < 0)
+{
+pld = (-1 * pld);
 }
-/**
-* print_last_digit - pritns the last digit of n
-* @n: integer whose last digit is displayed
-* Return: lastdigit of number
-*/
-int print_last_digit(int n)
-{
-int last_digit;
-last_digit = _abs((n % 10));
-_putchar(last_digit + 48);
-return (last_digit);
+_putchar(pld + '0');
+return (pld);
 }
